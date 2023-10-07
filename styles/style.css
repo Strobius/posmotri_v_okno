@@ -45,12 +45,7 @@ ol {
   align-items: flex-end;
   margin: auto;
   gap: 30px;
-  min-width: 1140px;
-}
-
-.content__video-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  max-width: 1140px;
 }
 
 .search-form {
@@ -118,7 +113,32 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   text-decoration: none;
+  margin: 2px;
+}
+
+.content__card-link_current {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content__video-card:hover {
+  text-decoration: underline #fff;
+  outline-offset: 2px;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 
 .content__video-card-description {
