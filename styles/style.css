@@ -56,8 +56,10 @@ ol {
 .content__list {
   overflow-y: scroll;
   max-height: 298px;
+  min-height: 298px;
   min-width: 399px;
   position: relative;
+  padding: 3px;
 }
 
 .content__list-item {
@@ -195,6 +197,8 @@ fieldset {
 
 input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.7 );
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
 }
 
 .search-form__label:has(.search-form__textfield:focus-visible) {
@@ -211,8 +215,8 @@ input::-webkit-input-placeholder {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #FFF;
-  outline-offset: 5px;
+  outline: 1px solid #FFF;
+  outline-offset: 2px;
 }
 
 .search-form__textfield:active {
@@ -293,4 +297,5 @@ input::-webkit-input-placeholder {
   width: 399px;
   height: 34px;
   border: 1px solid #fff;
+  /* margin: 3px 3px 3px 3px ; */
 }
