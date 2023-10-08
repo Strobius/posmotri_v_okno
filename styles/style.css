@@ -62,7 +62,7 @@ ol {
   padding: 3px;
 }
 
-.content__list-item {
+.content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -108,7 +108,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -147,7 +147,7 @@ ol {
 
 .content__video-card-description {
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -183,7 +183,7 @@ fieldset {
 
 .search-form__textfield {
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   background-color: transparent;
   font-size: 18px;
   font-style: normal;
@@ -228,7 +228,7 @@ input::-webkit-input-placeholder {
   cursor: pointer;
 }
 
-.search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
@@ -257,7 +257,7 @@ input::-webkit-input-placeholder {
   background-color: transparent;
   border: none;
   color: #FFF;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
