@@ -129,6 +129,7 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  padding: 2px;
 }
 
 .content__video-card:hover {
